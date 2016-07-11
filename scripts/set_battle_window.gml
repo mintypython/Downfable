@@ -1,0 +1,9 @@
+view_visible[battleView] = true;
+view_wview[battleView] = width;
+view_hview[battleView] = height;
+view_xview[battleView] = xPos;
+view_yview[battleView] = yPos;
+view_wport[battleView] = width + 1;
+view_hport[battleView] = height;
+view_xport[battleView] = xPos + shakeX;
+view_yport[battleView] = yPos + shakeY;
