@@ -269,7 +269,6 @@
       <script>scripts\scr_talk_after_combat.gml</script>
     </scripts>
   </scripts>
-  <shaders name="shaders"/>
   <fonts name="fonts">
     <font>fonts\bit</font>
     <font>fonts\bit_overworld</font>
@@ -278,6 +277,8 @@
     <font>fonts\bit_thin</font>
     <font>fonts\mars</font>
     <font>fonts\hachiro</font>
+    <font>fonts\bit_2</font>
+    <font>fonts\bit_2_thin</font>
   </fonts>
   <objects name="objects">
     <objects name="Bases">

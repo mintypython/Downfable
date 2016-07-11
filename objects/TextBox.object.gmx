@@ -34,7 +34,7 @@ relative = 1;
 complete = 0;
 letterX = x;
 letterY = y;
-font = bit;
+font = bit_2;
 instant = 0;
 skip = 0;
 p = 0;
@@ -46,7 +46,7 @@ wobble = 1;
 typeSnd = sndMenuText;
 questionSegment = false;
 bubbleStretch = 1;
-kerning = 2;
+kerning = 0.6;
 
 //Indexes
 i = 0;

@@ -32,7 +32,7 @@ complete = 0;
 x += 18;
 letterX = x;
 letterY = y;
-font = bit_thin;
+font = bit_2_thin;
 instant = 0;
 skip = 0;
 p = 0;
@@ -42,7 +42,7 @@ del = 0;
 wiggle = 1;
 wobble = 0;
 typeSnd = sndTimidSpeech;
-kerning = 1;
+kerning = 0.9;
 bubbleStretch = 1.1;
 
 //Values
