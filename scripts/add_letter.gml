@@ -27,6 +27,12 @@ if string_char_at(text[page], i) = "#"
         shake = other.shake;
         wobble = other.wobble;
         relative = other.relative;
+        if(other.instant) {
+            if(instance_number(Letter) > 1) {
+                var prev = instance_find(Letter, instance_number(Letter) - 2);
+                timer = prev.timer + 1;
+            }
+        }
     }
     
     letterX += string_width(letterInstance.letter) + kerning;
