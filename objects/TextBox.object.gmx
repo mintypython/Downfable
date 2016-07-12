@@ -46,7 +46,7 @@ wobble = 1;
 typeSnd = sndMenuText;
 questionSegment = false;
 bubbleStretch = 1;
-kerning = 0.6;
+kerning = 0;
 
 //Indexes
 i = 0;

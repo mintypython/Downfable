@@ -279,6 +279,7 @@
     <font>fonts\hachiro</font>
     <font>fonts\bit_2</font>
     <font>fonts\bit_2_thin</font>
+    <font>fonts\bit_2_overworld</font>
   </fonts>
   <objects name="objects">
     <objects name="Bases">
