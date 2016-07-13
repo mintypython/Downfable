@@ -1,17 +1,17 @@
 if PlayerHeart.state = 0
 {
     audio_play_sound(sndPlayerHurt,0,false);
-    if argument0 - PlayerMenuCont.def < 1
+    if argument0 - global.def < 1
     {
-        PlayerMenuCont.hp -= 1;
+        global.hp -= 1;
     }
     else
     {
-        PlayerMenuCont.hp -= round(argument0 - PlayerMenuCont.def);
+        global.hp -= round(argument0 - global.def);
     }
-    if PlayerMenuCont.hp < 0
+    if global.hp < 0
     {
-        PlayerMenuCont.hp = 0;
+        global.hp = 0;
     }
     with PlayerHeart
     {

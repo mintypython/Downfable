@@ -1,8 +1,8 @@
 audio_play_sound(sndHeal,1,false);
-PlayerMenuCont.hp += argument0;
-if PlayerMenuCont.hp >= PlayerMenuCont.maxHP
+global.hp += argument0;
+if global.hp >= global.maxHP
 {
-    PlayerMenuCont.hp = PlayerMenuCont.maxHP;
+    global.hp = global.maxHP;
     if instance_exists(TextBox)
     {
         inst.text[0] += "#HP maxed out!";

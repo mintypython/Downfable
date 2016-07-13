@@ -120,7 +120,7 @@ if alive = 1 &amp;&amp; changingState = 0
             mask_index = sprGreenMask;
             break;
     }
-    if PlayerMenuCont.hp = 0
+    if global.hp = 0
     {
         audio_stop_all();
         audio_play_sound(sndPlayerDeath,0,false);

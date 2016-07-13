@@ -38,10 +38,10 @@
     Page 5 = ACT - select action
 */
 lastMenuChoice = 0;
-name = "MIMP";
-level = 1;
-maxHP = GlobalCont.maxHP;
-hp = GlobalCont.hp;
+//name = "PLAYER";
+//level = 1;
+//maxHP = GlobalCont.maxHP;
+//hp = GlobalCont.hp;
 x_index = 0;
 y_index = 0;
 page = 0;
@@ -55,7 +55,7 @@ actX = 185;
 itemX = 345;
 mercyX = 500;
 inst = 0;
-def = 0;
+//def = 0;
 
 load_menu_nav(page);
 </string>

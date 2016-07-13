@@ -62,6 +62,7 @@
       <sprite>sprites\sprBubble1</sprite>
       <sprite>sprites\sprBubbleParts</sprite>
       <sprite>sprites\sprTextBox</sprite>
+      <sprite>sprites\sprSaveBox</sprite>
     </sprites>
     <sprites name="Environments">
       <sprite>sprites\sprWall_room_intro</sprite>
@@ -151,6 +152,7 @@
           <sprite>sprites\sprFriskWalkUp</sprite>
           <sprite>sprites\sprFriskWalkDown</sprite>
         </sprites>
+        <sprite>sprites\sprSavePoint</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -176,6 +178,7 @@
       <script>scripts\scrSpeechBubble.gml</script>
       <script>scripts\scrSpeechBubble_ext.gml</script>
       <script>scripts\find_bubble_width.gml</script>
+      <script>scripts\scrCreateObjectEvent.gml</script>
     </scripts>
     <scripts name="Controls">
       <script>scripts\scr_controls_init.gml</script>
@@ -268,6 +271,14 @@
       <script>scripts\scr_add_battle_event.gml</script>
       <script>scripts\scr_talk_after_combat.gml</script>
     </scripts>
+    <scripts name="General">
+      <script>scripts\draw_reset.gml</script>
+      <script>scripts\save_game.gml</script>
+      <script>scripts\initalize_variables.gml</script>
+      <script>scripts\load_save_stats.gml</script>
+      <script>scripts\load_save_stats_temp.gml</script>
+      <script>scripts\load_save.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\bit</font>
@@ -280,6 +291,8 @@
     <font>fonts\bit_2</font>
     <font>fonts\bit_2_thin</font>
     <font>fonts\bit_2_overworld</font>
+    <font>fonts\mf_back</font>
+    <font>fonts\mf_fore</font>
   </fonts>
   <objects name="objects">
     <objects name="Bases">
@@ -327,6 +340,7 @@
         <object>objects\LacrimoeOverworld</object>
         <object>objects\DoppleOverworld</object>
       </objects>
+      <object>objects\SavePoint</object>
     </objects>
     <objects name="Combat">
       <objects name="FIGHT">
@@ -395,6 +409,9 @@
         <object>objects\BattleMist</object>
       </objects>
     </objects>
+    <object>objects\Menu</object>
+    <object>objects\SaveBox</object>
+    <object>objects\SaveBoxMenu</object>
   </objects>
   <timelines name="timelines">
     <timelines name="Base">
@@ -440,8 +457,9 @@
   </timelines>
   <rooms name="rooms">
     <rooms name="Special">
+      <room>rooms\room_menu</room>
+      <room>rooms\room_load</room>
       <room>rooms\room_init</room>
-      <room>rooms\room_combat</room>
     </rooms>
     <rooms name="Ruins">
       <room>rooms\room_intro</room>
@@ -449,6 +467,7 @@
       <room>rooms\room_3</room>
       <room>rooms\room_4</room>
     </rooms>
+    <room>rooms\room_combat</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

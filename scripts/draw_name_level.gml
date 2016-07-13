@@ -4,5 +4,5 @@ var length = argument2;
 
 draw_set_font(mars);
 draw_set_color(c_white);
-draw_text(xPos, yPos, string(name));
-draw_text(xPos + length, yPos, "LV "+string(level));
+draw_text(xPos, yPos, string(global.name));
+draw_text(xPos + length, yPos, "LV "+string(global.level));
