@@ -6,13 +6,14 @@ global.name = ds_map_find_value(saveMap, "name");
 global.level = ds_map_find_value(saveMap, "level");
 global.location = ds_map_find_value(saveMap, "location");
 
-global.inventory = ds_map_find_value(saveMap, "inventory");
+ds_list_read(global.inventory, ds_map_find_value(saveMap, "inventory"));
 
 global.maxHP = ds_map_find_value(saveMap, "maxHP");
 global.hp = ds_map_find_value(saveMap, "HP");
 global.def = ds_map_find_value(saveMap, "def");
 
 instance_create(ds_map_find_value(saveMap, "playerX"), ds_map_find_value(saveMap, "playerY"), Player);
-room_goto(ds_map_find_value(saveMap, "room"));
+global.firstRoom = ds_map_find_value(saveMap, "room");
+room_goto(room_init);
 
 ds_map_destroy(saveMap);

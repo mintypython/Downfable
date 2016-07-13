@@ -53,18 +53,17 @@ seco = round(global.IngameTimer mod 60);
             <kind>1</kind>
             <string>if (keyboard_check_pressed(KeyCont.bind_primary))
 {
+    instance_create(0,0,GlobalCont);
     if (pos == 0)
     {
         randomize();
         load_save();
-        instance_create(0, 0, GlobalCont);
     }
     else if (pos == 1)
     {
         randomize();
-        instance_create(0,0,GlobalCont);
-        initalize_variables();
-        room_goto(global.firstRoom);
+        instance_create(100,100,Player);
+        room_goto(room_init);
     }
 }
     

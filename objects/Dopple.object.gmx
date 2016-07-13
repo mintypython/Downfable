@@ -55,8 +55,8 @@ smileCount = 0;
 //Stats
 fleeable = 1;
 name = "Dopple";
-maxHP = GlobalCont.maxHP;
-hp = GlobalCont.hp;
+maxHP = global.maxHP;
+hp = global.hp;
 deadSprite = sprDoppleFull;
 spareSprite = sprDoppleFull;
 

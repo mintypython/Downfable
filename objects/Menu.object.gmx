@@ -70,8 +70,10 @@ if (menu == 1)
 
 if (menu == 2)
 {
-    room_goto(room_init);
+    instance_create(0,0,GlobalCont);
+    instance_create(100,100,Player);
     draw_reset();
+    room_goto(room_init);
 }
 </string>
           </argument>

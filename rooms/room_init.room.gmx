@@ -11,8 +11,9 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>randomize();
-instance_create(0,0,GlobalCont);
 initalize_variables();
+if(!instance_exists(Player))
+    instance_create(100,100,Player);
 room_goto(global.firstRoom);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

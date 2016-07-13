@@ -8,7 +8,7 @@ global.SaveLocation = global.location;
 global.SaveMaxHP = global.maxHP;
 global.SaveHP = global.hp;
 global.SaveDef = global.def;
-global.SaveInventory = global.inventory
+global.SaveInventory = global.inventory;
 
 var saveMap = ds_map_create();
 
@@ -19,7 +19,7 @@ ds_map_add(saveMap, "playerY", global.SavePlayerY);
 ds_map_add(saveMap, "level", global.SaveLevel);
 ds_map_add(saveMap, "name", global.SaveName);
 ds_map_add(saveMap, "location", global.SaveLocation);
-ds_map_add(saveMap, "inventory", global.SaveInventory);
+ds_map_add(saveMap, "inventory", ds_list_write(global.SaveInventory));
 ds_map_add(saveMap, "maxHP", global.SaveMaxHP);
 ds_map_add(saveMap, "HP", global.SaveHP);
 ds_map_add(saveMap, "def", global.SaveDef);

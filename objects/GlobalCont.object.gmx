@@ -34,10 +34,6 @@
     This object handles the creation of global lists, variables, and objects.
 */
 load_item_list();
-if (!instance_exists(Player))
-{
-    instance_create(100,100,Player);
-}
 
 if (!instance_exists(KeyCont))
 {
