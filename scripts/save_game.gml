@@ -7,6 +7,8 @@ global.SaveName = global.name;
 global.SaveLocation = global.location;
 global.SaveMaxHP = global.maxHP;
 global.SaveHP = global.hp;
+global.SaveXP = global.xp;
+global.SaveGold = global.gold;
 global.SaveDef = global.def;
 global.SaveInventory = global.inventory;
 
@@ -23,6 +25,8 @@ ds_map_add(saveMap, "inventory", ds_list_write(global.SaveInventory));
 ds_map_add(saveMap, "maxHP", global.SaveMaxHP);
 ds_map_add(saveMap, "HP", global.SaveHP);
 ds_map_add(saveMap, "def", global.SaveDef);
+ds_map_add(saveMap, "xp", global.SaveXP);
+ds_map_add(saveMap, "gold", global.SaveGold);
 
 ds_map_secure_save(saveMap,"file0.sav");
 

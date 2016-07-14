@@ -68,6 +68,12 @@ hp = maxHP;
 sparable = 0;
 fleeable = 0;
 
+//drops
+//these are default stats, and are meant to be changed
+//you can apply your own drops by going into your object's create event
+gold_drop = 50;
+xp_drop = 100;
+
 //Moveset
 var i = 0;
 moves = 0;
@@ -128,6 +134,8 @@ if global.lastAction = "fight"
     gib.image_xscale = image_xscale;
     gib.image_yscale = image_yscale;
     gib.state = 0;
+    global.xp_gain = xp_drop;
+    global.gold_gain = gold_drop;
     
 }
 else if global.lastAction = "spare"
@@ -137,6 +145,7 @@ else if global.lastAction = "spare"
     gib.image_xscale = image_xscale;
     gib.image_yscale = image_yscale;
     gib.state = 1;
+    global.gold_gain = gold_drop;
 }
 
 if global.lastTarget = id

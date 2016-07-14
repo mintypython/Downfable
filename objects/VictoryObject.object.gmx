@@ -28,25 +28,8 @@
             <string>var textInstance = instance_create(50, 270, TextBox);
 with textInstance
 {
-    if ds_list_size(global.drops) = 0
-    {
-        text[0] = "* You Won!#* You got a paperclip and some string.";
-    }
-    else
-    {
-        text[0] ="* You Won!#You got";
-        for (var i = 0; i &lt; ds_list_size(global.drops); i++)
-        {
-            text[0] += " "+getItemDisplay(ds_list_find_value(global.drops, i));
-            ds_list_add(global.inventory, ds_list_find_value(global.drops, i));
-            if i+1 != ds_list_size(global.drops)
-            {
-                text[0] += ",";
-            }
-        }
-        text[0] += ".";
-        ds_list_clear(global.drops);
-    }
+    text[0] = "* You Won!#* You earned "+string(global.xp_gain)+" XP and "+string(global.gold_gain)+" gold!";
+
     controllable = 1;
 }
 

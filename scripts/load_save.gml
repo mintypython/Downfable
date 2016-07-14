@@ -11,6 +11,8 @@ ds_list_read(global.inventory, ds_map_find_value(saveMap, "inventory"));
 global.maxHP = ds_map_find_value(saveMap, "maxHP");
 global.hp = ds_map_find_value(saveMap, "HP");
 global.def = ds_map_find_value(saveMap, "def");
+global.xp = ds_map_find_value(saveMap, "xp");
+global.gold = ds_map_find_value(saveMap, "gold");
 
 instance_create(ds_map_find_value(saveMap, "playerX"), ds_map_find_value(saveMap, "playerY"), Player);
 global.firstRoom = ds_map_find_value(saveMap, "room");

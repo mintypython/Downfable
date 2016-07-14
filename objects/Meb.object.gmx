@@ -39,6 +39,9 @@ anchorY = y;
 hpDisplayOffset = 140;
 speechY = -200;
 
+xp_drop = 3;
+gold_drop = 5;
+
 //Stats
 name = "Meb";
 maxHP = 35;
