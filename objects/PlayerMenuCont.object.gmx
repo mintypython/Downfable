@@ -543,7 +543,7 @@ if active = 0
     draw_sprite(spr_button_item, 1, itemX, button_height);
     draw_sprite(spr_button_mercy, 1, mercyX, button_height);
     draw_name_level(30, 400, 93);
-    draw_hp(275, 400, 25);
+    draw_hp(275, 400, global.maxHP*1.2);
     exit;
 }
 else
@@ -622,7 +622,7 @@ else
     }
     
     draw_name_level(30, 400, 93);
-    draw_hp(275, 400, 25);
+    draw_hp(275, 400, global.maxHP*1.2);
 }
 </string>
           </argument>
