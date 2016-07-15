@@ -77,6 +77,24 @@ if string_char_at(text[page], i) = "[" && string_char_at(text[page], i-1) != "/"
             case "snd":
                 typeSnd = asset_get_index(arg);
                 break;
+            case "portrait":
+                var inst = instance_create(x,y,Portrait);
+                inst.sprite_index = asset_get_index(arg);
+                inst.parent = id;
+                inst.relative = relative;
+                var temp = sprite_get_width(inst.sprite_index);
+                x += temp;
+                letterX += temp;
+                with(Letter){
+                    if(parent == other.id){
+                        x+=temp;
+                        anchorX += temp;
+                    }
+                }
+                text[page] = string_copy(text[page],i,string_length(text[page])-1);
+                max_i -= i - 1;
+                i = 1;
+                break;
             default:
                 i = init;
         }

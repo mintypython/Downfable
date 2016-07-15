@@ -4,7 +4,5 @@ page += 1;
 max_i = string_length(text[0,page]);
 letterX = x;
 letterY = y;
-with Letter
-{
+with (Letter)
     instance_destroy();
-}

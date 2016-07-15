@@ -74,6 +74,7 @@
           <sprite>sprites\sprMebSpare</sprite>
           <sprite>sprites\sprMebDead</sprite>
           <sprite>sprites\sprMebBody</sprite>
+          <sprite>sprites\sprMebPortrait</sprite>
           <sprite>sprites\sprMebHead</sprite>
           <sprite>sprites\sprMebAtk</sprite>
           <sprite>sprites\sprMebAtk2</sprite>
@@ -179,6 +180,7 @@
       <script>scripts\scrSpeechBubble_ext.gml</script>
       <script>scripts\find_bubble_width.gml</script>
       <script>scripts\scrCreateObjectEvent.gml</script>
+      <script>scripts\check_for_portrait.gml</script>
     </scripts>
     <scripts name="Controls">
       <script>scripts\scr_controls_init.gml</script>
@@ -308,6 +310,7 @@
       <object>objects\Entity</object>
       <object>objects\Wall</object>
       <object>objects\Prop</object>
+      <object>objects\Portrait</object>
     </objects>
     <objects name="Global Controllers">
       <object>objects\GlobalCont</object>

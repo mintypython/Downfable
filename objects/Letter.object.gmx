@@ -155,8 +155,7 @@ if wiggle = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if relative = 0
-{
+            <string>if (!relative) {
     draw_set_font(font);
     draw_set_color(color);
     draw_text(x, y, letter);
@@ -183,8 +182,7 @@ if wiggle = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if relative = 1
-{
+            <string>if (relative){
     draw_set_halign(fa_left);
     draw_set_font(font);
     draw_set_color(color);

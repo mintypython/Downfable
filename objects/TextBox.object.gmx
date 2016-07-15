@@ -83,18 +83,16 @@ shake = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with Letter
-{
-    if parent = other.id
-    {
+            <string>with (Letter)
+    if (parent == other.id)
         instance_destroy();
-    }
-}
 
-if clean = 1
-{
+with(Portrait)
+    if(parent == other.id) 
+        instance_destroy();
+
+if (clean)
     nextEvent();
-}
 </string>
           </argument>
         </arguments>

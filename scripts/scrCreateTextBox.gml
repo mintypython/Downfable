@@ -18,7 +18,15 @@ inst.clean = 1;
 inst.font = bit_2_overworld;
 inst.typeSnd = sound;
 var i = 0;
-for (i=0; i < argument_count; i++)
-{
-    inst.text[i] = "* "+argument[i];
+for (i=0; i < argument_count; i++) {
+    var place = check_for_portrait(argument[i]);
+    if(place) {
+        var temp = argument[i];
+        inst.text[i] = string_copy(temp, 0, place-1);
+        inst.text[i] += "* ";
+        inst.text[i] += string_copy(temp, place, string_length(temp));
+        show_debug_message(inst.text[i]);
+    }
+    else
+        inst.text[i] = "* "+argument[i];
 }
