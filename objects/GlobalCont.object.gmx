@@ -44,6 +44,7 @@ instance_create(0,0,Event);
 global.enemyList = ds_list_create();
 global.inventory = ds_list_create();
 global.drops = ds_list_create();
+ds_list_add(global.inventory, 0, 1, 3, 0);
 /*ds_list_add(global.inventory, 0);
 ds_list_add(global.inventory, 1);
 ds_list_add(global.inventory, 2);
@@ -115,6 +116,18 @@ ds_list_destroy(global.drops);
             <string>display_set_gui_size(view_wview[0],view_hview[0]);
 
 global.IngameTimer += 1/room_speed;
+
+if keyboard_check_pressed(ord("C")){
+    if(!global.playable &amp;&amp; instance_exists(OverworldMenu)){
+        with(OverworldMenu)
+            instance_destroy();
+        player_start();
+    }
+    else if (global.playable &amp;&amp; !instance_exists(OverworldMenu)){
+        player_stop();
+        instance_create(0,0,OverworldMenu);
+    }
+}
 </string>
           </argument>
         </arguments>

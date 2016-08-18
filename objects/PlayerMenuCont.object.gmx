@@ -301,7 +301,8 @@ if KeyCont.key_primary[0] = 1
         inst.controllable = 1;
         instance_create(0,0,PlayerActCont);
         script_execute(asset_get_index(getItemName(ds_list_find_value(global.inventory,x_index + 2*y_index + 4 * page_ii))));
-        ds_list_delete(global.inventory,x_index + 2*y_index + 4*page_ii);
+        if(getItemConsumable(i))
+            ds_list_delete(global.inventory,x_index + 2*y_index + 4*page_ii);
     }
     else if page = 4
     {

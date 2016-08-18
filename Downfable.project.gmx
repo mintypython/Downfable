@@ -193,6 +193,8 @@
     <scripts name="ITEM">
       <script>scripts\getItemName.gml</script>
       <script>scripts\getItemFlavor.gml</script>
+      <script>scripts\getItemDescription.gml</script>
+      <script>scripts\getItemConsumable.gml</script>
       <script>scripts\load_item_list.gml</script>
       <scripts name="Items">
         <script>scripts\FaceSteak.gml</script>
@@ -281,6 +283,16 @@
       <script>scripts\load_save_stats_temp.gml</script>
       <script>scripts\load_save.gml</script>
     </scripts>
+    <scripts name="Overworld Menu">
+      <script>scripts\scr_overworld_menu_main.gml</script>
+      <script>scripts\scr_overworld_menu_item.gml</script>
+      <script>scripts\scr_overworld_menu_stat.gml</script>
+      <scripts name="ITEM">
+        <script>scripts\scr_overworld_menu_info.gml</script>
+        <script>scripts\scr_overworld_menu_drop.gml</script>
+        <script>scripts\scr_overworld_menu_use.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\bit</font>
@@ -289,6 +301,7 @@
     <font>fonts\bit_small</font>
     <font>fonts\bit_thin</font>
     <font>fonts\mars</font>
+    <font>fonts\mars_small</font>
     <font>fonts\hachiro</font>
     <font>fonts\bit_2</font>
     <font>fonts\bit_2_thin</font>
@@ -329,6 +342,7 @@
       <object>objects\Camera</object>
       <object>objects\Fade</object>
       <object>objects\Pathway</object>
+      <object>objects\OverworldMenu</object>
     </objects>
     <objects name="Overworld Entities">
       <object>objects\IntroGuy</object>
@@ -472,6 +486,12 @@
     </rooms>
     <room>rooms\room_combat</room>
   </rooms>
+  <constants number="4">
+    <constant name="UPDATE">0</constant>
+    <constant name="DRAW">1</constant>
+    <constant name="ENTER">2</constant>
+    <constant name="EXIT">3</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

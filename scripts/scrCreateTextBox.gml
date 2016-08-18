@@ -30,3 +30,5 @@ for (i=0; i < argument_count; i++) {
     else
         inst.text[i] = "* "+argument[i];
 }
+
+return inst;

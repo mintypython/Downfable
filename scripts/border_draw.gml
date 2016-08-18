@@ -1,3 +1,4 @@
+///border_draw(x1,y1,x2,y2,thickness)
 draw_set_color(c_white);
 var thickness = argument4;
 var x1 = argument0;
